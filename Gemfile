@@ -19,8 +19,12 @@ gem 'jbuilder',                   '2.9.1'
 gem 'bootsnap',                   '1.4.4', require: false
 gem 'factory_bot',                '5.1.1'
 gem 'factory_bot_rails',          '5.1.1'
+gem 'capistrano',                 '3.11.2'
+gem 'capistrano-rails',           '1.4.0'
+gem 'capistrano-rvm',             '0.1.2'
+gem 'capistrano-passenger',       '0.2.0'
 
-group :development, :test do
+group :development, :test, :staging do
   # gem 'debase'
   # gem 'ruby-debug-ide'
   gem 'rspec-rails',        '3.9.0'
