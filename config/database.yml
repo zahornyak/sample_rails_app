@@ -21,6 +21,11 @@ test:
   adapter: sqlite3
   database: db/test.sqlite3
 
+staging:
+  <<: *default
+  adapter: sqlite3
+  database: db/staging.sqlite3
+
 production:
   adapter: postgresql
   encoding: unicode
