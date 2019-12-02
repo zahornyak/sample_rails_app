@@ -1,8 +1,12 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.11.2"
 
-set :application, "my_app_name"
-set :repo_url, "git@example.com:me/my_repo.git"
+set :application, "sample_rails_app"
+set :repo_url, "https://github.com/JetBrains/sample_rails_app"
+set :branch, "capistrano-deploy"
+set :deploy_to, "/home/deploy/apps/sample_rails_app"
+set :keep_releases, 5
+set :format, :pretty
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
