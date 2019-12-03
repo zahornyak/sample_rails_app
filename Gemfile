@@ -21,7 +21,7 @@ gem 'factory_bot',                '5.1.1'
 gem 'factory_bot_rails',          '5.1.1'
 gem 'capistrano',                 '3.11.2'
 gem 'capistrano-rails',           '1.4.0'
-gem 'capistrano-rvm',             '0.1.2'
+gem 'capistrano-rbenv',           '2.1.4 '
 gem 'capistrano-passenger',       '0.2.0'
 
 group :development, :test, :staging do
