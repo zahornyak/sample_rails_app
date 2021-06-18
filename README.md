@@ -5,7 +5,7 @@ We created this project to help you try RubyMine features.
 To get started with the app, follow the [step-by-step tutorial](https://www.jetbrains.com/help/ruby/get-started.html) 
 or check out our [YouTube channel](https://www.youtube.com/playlist?list=PLQ176FUIyIUanO72dRf6lOefKIznviKKJ).
 
-## Getting started test
+## Getting started test dd
 
 To get started with the app, first clone the repo and `cd` into the directory:
 
