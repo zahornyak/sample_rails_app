@@ -12,7 +12,6 @@ RUN gem install bundler -v '2.2.15'
 RUN bundle install
 RUN yarn install --check-files
 COPY . /sample_rails_application
-RUN RAILS_ENV=production bundle exec rails assets:precompile
 EXPOSE 3000
 
 CMD ["rails", "server", "-b", "0.0.0.0"]
