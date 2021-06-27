@@ -19,7 +19,7 @@ pipeline {
         stage('ansible') {
             steps {
                 git 'https://github.com/zahornyak/ansible-setting.git'
-                sh 'cd /var/lib/jenkins/workspace/test-docker-build-image-using-git/'
+                sh 'pwd'
                 sh 'echo "build_number: $BUILD_NUMBER" > group_vars/all'
                 sh 'ansible-playbook -i hosts.yml playbook.yml'
                 
