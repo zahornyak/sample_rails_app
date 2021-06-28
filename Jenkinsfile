@@ -5,6 +5,7 @@ pipeline {
         
         stage('docker build') {
             steps {
+                sh 'docker rmi -f $(docker images -q)'
                 git 'https://github.com/zahornyak/sample_rails_app'
                 sh 'docker build -t sample-rails-app:$BUILD_NUMBER .' 
             }
