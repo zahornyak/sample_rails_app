@@ -16,5 +16,5 @@ EXPOSE 3000
 
 
 CMD ["rails", "server", "-b", "0.0.0.0"]
-ENTRYPOINT entrypoint.sh
+#ENTRYPOINT entrypoint.sh
 
