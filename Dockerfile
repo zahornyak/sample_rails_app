@@ -14,6 +14,7 @@ RUN yarn install --check-files
 COPY . /sample_rails_application
 EXPOSE 3000
 
-ENTRYPOINT entrypoint.sh
+
 CMD ["rails", "server", "-b", "0.0.0.0"]
+ENTRYPOINT entrypoint.sh
 
