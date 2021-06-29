@@ -20,7 +20,6 @@ pipeline {
         stage('ansible') {
             steps {
                 git 'https://github.com/zahornyak/ansible-setting.git'
-                sh 'pwd || ls'
                 sh 'echo "build_number: $BUILD_NUMBER" > group_vars/all'
                 sh 'ansible-playbook -i hosts.yml playbook.yml'
                 
