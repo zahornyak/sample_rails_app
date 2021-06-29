@@ -5,7 +5,11 @@ pipeline {
         
         stage('docker build') {
             steps {
+                try {
                 sh 'docker rmi -f $(docker images -q)'
+            } catch (err) {
+                echo err.getMessage()
+            }
                 git 'https://github.com/zahornyak/sample_rails_app'
                 sh 'docker build -t sample-rails-app:$BUILD_NUMBER .' 
             }
