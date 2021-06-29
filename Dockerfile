@@ -14,7 +14,9 @@ RUN yarn install --check-files
 COPY . /sample_rails_application
 EXPOSE 3000
 
-
+COPY ./entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
 CMD ["rails", "server", "-b", "0.0.0.0"]
 #ENTRYPOINT entrypoint.sh
 
