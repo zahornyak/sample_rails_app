@@ -1,4 +1,4 @@
-# Ruby on Rails Tutorial sample application
+# Ruby on
 
 This is a fork of the [*Ruby on Rails Tutorial*](http://www.railstutorial.org/) application by Michael Hartl. 
 We created this project to help you try RubyMine features.
