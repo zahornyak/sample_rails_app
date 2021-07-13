@@ -14,7 +14,7 @@ $ git clone https://github.com/JetBrains/sample_rails_app.git
 $ cd sample_rails_app
 ```
 
-Then install the needed gems (while skipping any gems needed only in production):
+Then install the needed gems (while skipping any gems needed only in producti
 
 ```
 $ bundle install --without production
